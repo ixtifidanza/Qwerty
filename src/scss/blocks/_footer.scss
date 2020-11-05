@@ -1,0 +1,133 @@
+.footer {
+    position: relative;
+    padding-bottom: 50px;
+    background-image: url(../../img/icons/bg-footer.png);
+    background-size: cover;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 223px 0 140px;
+    }
+
+    &__item:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item:last-child {
+        align-self: flex-end;
+    }
+
+    &__title {
+        font-family: 'Gotham Pro Bold';
+        font-size: 45px;
+        margin: 0 auto;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -65px;
+            border: 5px solid #fff;
+            height: 55px;
+
+        }
+    }
+
+    &__logo {
+        img {
+            display: block;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h4 {
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+    }
+
+    &__mail {
+        margin: 29px 0 44px;
+    }
+
+    &__social {
+        margin-top: 43px;
+    }
+
+    &__social {
+        width: 105px;
+        display: flex;
+        justify-content: space-between;
+
+        & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #fff;
+            text-align: center;
+        }
+    }
+
+    &__facebook {
+        width: 30%;
+    }
+
+    &__twitter {
+        width: 50%;
+    }
+
+    &__arrow {
+        height: 3px;
+        width: 58px;
+        background-color: #fff;
+        margin-top: 45px;
+        border-radius: 9px;
+        position: relative;
+        transition: all .3s ease-in;
+
+        &:after {
+            content: '';
+            position: absolute;
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+            border-radius: 3px;
+            top: -8px;
+            right: 0;
+            height: 17px;
+            width: 17px;
+            transform: rotate(45deg);
+        }
+
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__map {
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+
+    &__arrow {
+        z-index: 9;
+        &:hover {
+            width: 127px;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.team {
+    &__title {
+        font-size: 55px;
+        font-family: 'Gotham Pro Bold';
+        line-height: 62px;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-family: 'Gotham Pro Light';
+        line-height: 21px;
+    }
+    .swiper-2 {
+        margin-left: 10%;
+        margin-top: -60px;
+    }
+    .swiper-slide {
+        opacity: 0;
+        &-prev,
+        &-active,
+        &-next {
+            opacity: 1;
+            transition: all .3s ease-in;
+        }
+    }
+    &__inner {
+        opacity: 0;
+        transition: all .3s ease-in;
+    }
+    .swiper-slide.swiper-slide-prev {
+        transition: all .3s ease-in;
+        opacity: 0;
+    }
+    .swiper-slide.swiper-slide-active {
+        transition: all .3s ease-in;
+        .team__img {
+            transition: all .3s ease-in-out;
+            background-image: url('./../img/bg-team.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        .team__inner {
+            transition: all .3s ease-in;
+            opacity: 1;
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+}

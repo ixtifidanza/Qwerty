@@ -1,0 +1,48 @@
+.services {
+    padding: 95px 0;
+    &__title {
+        font-size: 55px;
+        font-family: 'Gotham Pro Bold';
+        line-height: 62px;
+        margin-bottom: 95px;
+    }
+    &__name {
+        font-size: 30px;
+        font-family: 'Gotham Pro Bold';
+        color: #fff;
+        margin-bottom: 28px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-family: 'Gotham Pro Light';
+        line-height: 21px;
+    }
+    &__arrow {
+        height: 3px;
+        width: 58px;
+        background-color: #fff;
+        margin-top: 45px;
+        border-radius: 9px;
+        position: relative;
+        transition: all .3s ease-in;
+        &:after {
+            content: '';
+            position: absolute;
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+            border-radius: 3px;
+            top: -8px;
+            right: 0;
+            height: 17px;
+            width: 17px;
+            transform: rotate(45deg);
+        }
+    }
+    &__box {
+        cursor: pointer;
+    }
+    &__box:hover .services__arrow {
+        width: 127px;
+        transition: all .3s ease;
+    }
+}
